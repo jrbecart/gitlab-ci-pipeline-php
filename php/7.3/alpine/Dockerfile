@@ -48,6 +48,8 @@ RUN chmod +x /tmp/*.sh \
 
 USER $IMAGE_USER
 
-WORKDIR /var/www/html
+#WORKDIR /var/www/html
+#CMD ["php", "-a"]
 
-CMD ["php", "-a"]
+WORKDIR /var/www
+CMD ["/bin/sh"]
