@@ -53,5 +53,5 @@ USER $IMAGE_USER
 
 WORKDIR /var/www
 COPY ./php/7.3/alpine/startup.sh /opt/startup.sh
-RUN chmod +x /opt/startup.sh
+RUN sudo chmod +x /opt/startup.sh
 ENTRYPOINT ["/bin/sh","/opt/startup.sh"]
